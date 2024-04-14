@@ -89,38 +89,6 @@ class App extends Component {
         })
     }
 
-    // onToggleIncrease = (id) => {
-    //     // this.setState(({data}) => {
-    //     //     const index = data.findIndex(item => item.id === id),
-    //     //           old = data[index],
-    //     //           newItem = {...old, increase: !old.increase},
-    //     //           newArr = [...data.slice(0, index), newItem, ...data.slice(index + 1)];
-
-    //     //     return {
-    //     //         data: newArr
-    //     //     }
-    //     // });
-    //     this.setState(({data}) => ({
-    //         data: data.map(item => {
-    //             if(item.id === id) {
-    //                 return {...item, increase: !item.increase}
-    //             }
-    //             return item;
-    //         })
-    //     }))
-    // }
-
-    // onToggleRise = (id) => {
-    //     this.setState(({data}) => ({
-    //         data: data.map(item => {
-    //             if(item.id === id) {
-    //                 return {...item, rise: !item.rise}
-    //             }
-    //             return item;
-    //         })
-    //     }))
-    // }
-
     onToggleProps = (id, props) => {
         this.setState(({data}) => ({
             data: data.map(item => {
@@ -142,8 +110,6 @@ class App extends Component {
             })
         }))
     }
-
-    // onSalaryChange = ()
 
     searchEmp = (items, term) => {
         if(!term.length) return items;
